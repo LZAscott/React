@@ -81,17 +81,18 @@ class Header extends Component {
 					onMouseEnter={ handleMouseEnter }
 					onMouseLeave={ handleMouseLeave }
 				>
-							<SearchInfoTitle>
-								热门搜索
-								<SearchInfoSwitch onClick={()=> handleChangePage(page, totalPage, this.spinIcon) }>
-								<i ref={(icon)=>{this.spinIcon = icon}} className='iconfont spin'>&#xe851;</i>
-									换一批
-								</SearchInfoSwitch>
-							</SearchInfoTitle>
-							<SearchInfoList>
-								{pageList}
-							</SearchInfoList>
-						</SearchInfo>
+
+					<SearchInfoTitle>
+						热门搜索
+						<SearchInfoSwitch onClick={()=> handleChangePage(page, totalPage, this.spinIcon) }>
+							<i ref={(icon)=>{this.spinIcon = icon}} className='iconfont spin'>&#xe851;</i>
+							换一批
+						</SearchInfoSwitch>
+					</SearchInfoTitle>
+					<SearchInfoList>
+						{pageList}
+					</SearchInfoList>
+				</SearchInfo>
 			)
 		}else{
 			return null;
