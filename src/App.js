@@ -11,12 +11,13 @@ import Detail from './pages/detail/index.js';
 function App() {
   return (
     <Provider store={store}>
-      <GlobalStyle/>
-      <GlobalIconfontStyle/>
-      <Header />
+      <GlobalStyle />
+      <GlobalIconfontStyle />
+
       <BrowserRouter>
+        <Header />
         <Route path='/' exact component={Home}></Route>
-        <Route path='/detail' exact component={Detail}></Route>
+        <Route path='/detail/:id' exact component={Detail}></Route>
       </BrowserRouter>
     </Provider>
   );
