@@ -5,7 +5,7 @@ const changeDetail = (title, content) => ({
 	type: constants.CHANG_DETAIL,
 	title,
 	content,
-})
+});
 
 
 export const getDetail = (id) => {
@@ -17,4 +17,4 @@ export const getDetail = (id) => {
 			alert('失败');
 		})
 	}
-}
+};

@@ -11,14 +11,13 @@ const changeDetail = (state, action) => {
 		title: action.title,
 		content: action.content,
 	})
-}
+};
 
 export default (state = defaultState, action) => {
-
 	switch(action.type){
 		case constants.CHANG_DETAIL:
 			return changeDetail(state, action)
 		default:
 			return state;
 	}
-}
+};
